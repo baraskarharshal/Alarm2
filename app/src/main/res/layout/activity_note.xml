@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.apps.rdjsmartapps.alarm.NoteActivity">
+
+    <EditText
+        android:id="@+id/noteEdit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:backgroundTint="@color/colorPrimary"
+        />
+
+    <View style="@style/line" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        >
+
+        <Button
+            android:id="@+id/okButton"
+            android:text="Ok"
+            android:layout_width="100dp"
+            android:layout_height="35dp"
+            android:textAllCaps="false"
+            android:layout_alignParentLeft="true"
+            android:textSize="18sp"
+            android:background="@drawable/button"
+            android:textColor="#FFFFFF"
+            />
+
+        <Button
+            android:id="@+id/cancelButton"
+            android:text="Cancel"
+            android:layout_width="100dp"
+            android:layout_height="35dp"
+            android:textAllCaps="false"
+            android:layout_alignParentRight="true"
+            android:textSize="18sp"
+            android:background="@drawable/button"
+            android:textColor="#FFFFFF"
+            />
+
+    </RelativeLayout>
+</LinearLayout>

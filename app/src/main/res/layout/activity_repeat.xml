@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.apps.rdjsmartapps.alarm.AlarmInfoActivity">
+
+
+    <RadioGroup
+        android:id="@+id/repeatOptions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_gravity="center"
+        android:backgroundTint="@color/colorPrimary"
+        >
+
+        <RadioButton
+            android:id="@+id/everyday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Everyday"
+            android:textColor="#808080"
+            android:padding="20dp"
+            android:textSize="17sp"
+            android:checked="true"
+
+            />
+
+        <RadioButton
+            android:id="@+id/once"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:textSize="17sp"
+            android:text="Once"
+            android:textColor="#808080"
+            />
+
+        <RadioButton
+            android:id="@+id/mtof"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:textSize="17sp"
+            android:text="Mon to Fri"
+            android:textColor="#808080"
+            />
+
+        <RadioButton
+            android:id="@+id/custom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:textSize="17sp"
+            android:text="Only selected days"
+            android:textColor="#808080"
+            />
+
+
+    </RadioGroup>
+
+    <View style="@style/line" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        >
+
+        <Button
+            android:id="@+id/okButton"
+            android:text="Ok"
+            android:layout_width="100dp"
+            android:layout_height="35dp"
+            android:textAllCaps="false"
+            android:layout_alignParentLeft="true"
+            android:textSize="18sp"
+            android:background="@drawable/button"
+            android:textColor="#FFFFFF"
+            />
+
+        <Button
+            android:id="@+id/cancelButton"
+            android:text="Cancel"
+            android:layout_width="100dp"
+            android:layout_height="35dp"
+            android:textAllCaps="false"
+            android:layout_alignParentRight="true"
+            android:textSize="18sp"
+            android:background="@drawable/button"
+            android:textColor="#FFFFFF"
+            />
+
+    </RelativeLayout>
+
+</LinearLayout>

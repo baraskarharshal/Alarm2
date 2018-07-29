@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.apps.rdjsmartapps.alarm">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="com.apps.rdjsmartapps.alarm.alarm.permission.SET_ALARM" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/AppTheme">
+
+        </activity>
+        <activity
+            android:name=".AlarmInfoActivity"
+            android:label="Set Alarm"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".NoteActivity"
+            android:label="Set Alarm Note"
+            android:theme="@style/Theme.AppCompat.DayNight.Dialog" />
+        <activity
+            android:name=".RingtoneActivity"
+            android:label="Select Ringtone"
+            android:theme="@style/Theme.AppCompat.DayNight.Dialog" />
+        <activity
+            android:name=".RepeatActivity"
+            android:label="Select Repeat Type"
+            android:theme="@style/Theme.AppCompat.DayNight.Dialog" />
+        <activity
+            android:name=".DaysActivity"
+            android:label="Select Days"
+            android:theme="@style/Theme.AppCompat.DayNight.Dialog" />
+
+        <receiver
+            android:name=".AlarmBroadcaster"
+            android:enabled="true"
+            android:exported="true"
+            android:label="RestartServiceWhenStopped">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_PLAYREMINDER_DAILY" />
+            </intent-filter>
+        </receiver>
+        <!-- This is the service that will run when the alarm time is reached -->
+        <service
+            android:name=".NotificationTrigger"
+            android:exported="false" />
+
+        <!-- You see how the filter here is boot completed, that is why that receiver works, cause you declared the filter here -->
+        <receiver
+            android:name=".DeviceBootReceiver"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <!-- keep service running -->
+        <service
+            android:name=".SensorService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <receiver
+            android:name=".SensorRestarterBroadcastReceiver"
+            android:enabled="true"
+            android:exported="true"
+            android:label="RestartServiceWhenStopped">
+            <intent-filter>
+                <action android:name="uk.ac.shef.oak.ActivityRecognition.RestartSensor" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".AlarmActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity android:name=".Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

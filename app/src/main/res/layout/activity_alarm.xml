@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.apps.rdjsmartapps.alarm.AlarmActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/background2"
+        android:scaleType="centerCrop"
+        />
+
+    <LinearLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="8"
+        >
+
+    <TextView
+        android:id="@+id/note"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Alarm Note"
+        android:textSize="25sp"
+        android:layout_gravity="center"
+        android:textColor="@color/colorPrimary"
+        android:layout_margin="20dp"
+        />
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        >
+
+        <ProgressBar
+            android:id="@+id/ProgressBar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            style="?android:attr/progressBarStyleLarge"
+            android:indeterminateDrawable="@drawable/progressbarbg"
+            android:progress="50"
+            android:tooltipText=""
+            />
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Alarm time"
+            android:textSize="25sp"
+            android:textColor="#ff8f00"
+            android:layout_marginTop="80dp"
+            android:layout_marginLeft="45dp"
+            />
+
+    </RelativeLayout>>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        >
+
+        <Button
+            android:id="@+id/stopButton"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:text="Stop"
+            android:textAllCaps="false"
+            android:textSize="25sp"
+            android:gravity="center_horizontal"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/button"
+            android:textColor="#ffff"
+            android:layout_marginLeft="100dp"
+            android:layout_marginRight="100dp"
+            android:layout_marginBottom="30dp"
+            />
+
+    </RelativeLayout>
+
+
+</LinearLayout>
+
+</RelativeLayout>

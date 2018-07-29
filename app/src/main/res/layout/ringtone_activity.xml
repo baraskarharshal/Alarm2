@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.apps.rdjsmartapps.alarm.AlarmInfoActivity">
+
+
+    <TextView
+        android:id="@+id/addNewRingtone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add new ringtone"
+        android:textSize="17sp"
+        android:layout_margin="25dp"
+        android:textColor="@color/colorPrimary"
+        />
+
+    <ScrollView
+        android:id="@+id/ringScroll"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        >
+
+        <RadioGroup
+            android:id="@+id/ringOptions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            >
+
+        </RadioGroup>
+    </ScrollView>
+
+    <View style="@style/line" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        >
+
+        <Button
+            android:id="@+id/okButton"
+            android:text="Ok"
+            android:layout_width="100dp"
+            android:layout_height="35dp"
+            android:textAllCaps="false"
+            android:layout_alignParentLeft="true"
+            android:textSize="18sp"
+            android:background="@drawable/button"
+            android:textColor="#FFFFFF"
+            />
+
+        <Button
+            android:id="@+id/cancelButton"
+            android:text="Cancel"
+            android:layout_width="100dp"
+            android:layout_height="35dp"
+            android:textAllCaps="false"
+            android:layout_alignParentRight="true"
+            android:textSize="18sp"
+            android:background="@drawable/button"
+            android:textColor="#FFFFFF"
+            />
+
+    </RelativeLayout>
+</LinearLayout>
+
+	

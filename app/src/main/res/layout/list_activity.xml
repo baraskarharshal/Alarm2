@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="10dp"
+    tools:context="com.apps.rdjsmartapps.alarm.MainActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:id="@+id/alarmTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="8"
+                android:text="8:10"
+                android:textSize="30sp"
+                />
+
+            <TextView
+                android:id="@+id/ampm"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:gravity="top"
+                android:layout_weight="2"
+                android:text="AM"
+                android:textSize="10sp" />
+
+        </LinearLayout>
+
+
+
+        <TextView
+            android:id="@+id/alarmRecurrence"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:text="Everyday"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="6"
+        >
+
+        <TextView
+            android:id="@+id/alarmNote"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center|left"
+            android:layout_weight="4"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:text="Sample Alarm"
+            />
+
+        <TextView
+            android:id="@+id/timeForAlarm"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="6"
+            android:gravity="bottom"
+            android:textSize="12sp"
+            android:text="Alarm in 1 Hr 30 Mins."
+            android:textColor="#808080"
+            />
+
+    </LinearLayout>
+
+
+
+
+    <Switch
+        android:id="@+id/state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|left"
+        android:layout_marginRight="20dp"
+        android:layout_weight="2"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        />
+
+</LinearLayout>

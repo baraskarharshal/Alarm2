@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Alarm</string>
+    <string name="action_settings">Settings</string>
+    <string name="noteDialogTitle">Set Alarm Note</string>
+    <string name="repeatDialogTitle">Repeat Options</string>
+    <string name="daysDialogTitle">Select Days</string>
+</resources>

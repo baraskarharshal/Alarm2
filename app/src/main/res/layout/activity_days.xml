@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.apps.rdjsmartapps.alarm.NoteActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="40dp"
+        android:textColor="#808080"
+        android:layout_marginTop="20dp">
+
+        <CheckBox android:id="@+id/Mon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Monday"
+            android:textSize="17sp"
+            />
+        <CheckBox android:id="@+id/Tue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tuesday"
+            android:textSize="17sp"
+            />
+        <CheckBox android:id="@+id/Wed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Wednesday"
+            android:textSize="17sp"
+            />
+        <CheckBox android:id="@+id/Thu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Thursday"
+            android:textSize="17sp"
+            />
+        <CheckBox android:id="@+id/Fri"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Friday"
+            android:textSize="17sp"
+            />
+        <CheckBox android:id="@+id/Sat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Saturday"
+            android:textSize="17sp"
+            />
+        <CheckBox android:id="@+id/Sun"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sunday"
+            android:textSize="17sp"
+            />
+
+    </LinearLayout>
+
+    <View style="@style/line" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        >
+
+        <Button
+            android:id="@+id/okButton"
+            android:text="Ok"
+            android:layout_width="100dp"
+            android:layout_height="35dp"
+            android:textAllCaps="false"
+            android:layout_alignParentLeft="true"
+            android:textSize="18sp"
+            android:background="@drawable/button"
+            android:textColor="#FFFFFF"
+            />
+
+        <Button
+            android:id="@+id/cancelButton"
+            android:text="Cancel"
+            android:layout_width="100dp"
+            android:layout_height="35dp"
+            android:textAllCaps="false"
+            android:layout_alignParentRight="true"
+            android:textSize="18sp"
+            android:background="@drawable/button"
+            android:textColor="#FFFFFF"
+            />
+
+    </RelativeLayout>
+</LinearLayout>
